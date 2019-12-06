@@ -1,0 +1,407 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* start code */
+.flex-direction {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.flex-end {
+    justify-content: flex-end;
+    /* text-align: right; */
+}
+
+html {
+    font-size: 16;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.responsive-img {
+    width: 100%;
+}
+
+.button {
+    background-color: #2E3141;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid gray;
+    padding: 10px 20px;
+}
+
+/* header */
+.header-flex {
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    padding: .5rem 1rem;
+    background-color: rgba(54, 58, 77, .5);
+}
+
+.logo {
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    align-items: center;
+    padding: 12px 11px;
+}
+
+header nav a {
+    text-decoration: none;
+}
+
+.menu {
+    margin-top: 5px;
+    padding: 6px 16px;
+    font-size: 1rem;
+    border: 1px solid rgb(44, 44, 44);
+}
+
+body {
+
+    background-image: url(../images/wall.jpeg);
+    background-attachment: fixed;
+}
+
+.diamond-box {
+    width: 4.68rem;
+    height: 4.68rem;
+    /* background-color: #30394A; */
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+}
+
+.hero-padding {
+    padding: 10.93rem 0px;
+}
+
+.hero-heading {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 20px 0px;
+    color: white;
+}
+
+.hero-para {
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1.25rem 0px;
+    color: gray;
+}
+
+/* Article section */
+.article-bgc {
+    background-color: #4C5C96;
+}
+
+.img-flex-basis {
+    flex-basis: 30%;
+}
+
+.article-flex-basis {
+    flex-basis: 60%;
+}
+
+/* .img-flex-basis mediaquere */
+.article-image {
+    border-radius: 50%;
+}
+
+.article-padding {
+    padding: 3.25rem 0px;
+}
+
+.article-heading {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    padding: 20px 0px 10px 0px;
+}
+
+.article-para {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: rgb(180, 180, 180);
+}
+
+.small-circle {
+    height: 40px;
+    width: 40px;
+    /* font-size: 20px; */
+    /* display: inline-block */
+}
+
+.change-to-inline-block {
+    display: inline-block;
+}
+
+.learn-more {
+    padding: 10px 10px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+ul {
+    padding: 20px 0px;
+}
+
+/* gallery section */
+.gallery-bgc {
+    background-color: #2E3141;
+}
+
+.gallery-padding {
+    padding: 70px 0px;
+}
+
+.gallery-flex-basis {
+    flex-basis: 47%;
+    color: white;
+    padding: 60px 0px 40px 0px;
+}
+
+.gallery-heading {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding: 25px 0px;
+    color: white;
+}
+
+.gallery-para {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: gray;
+}
+
+.gallery-common-padding {
+    padding: 10px 30px;
+    background-color: #353849;
+}
+
+
+/* contact section */
+input,
+textarea {
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 6px;
+    background: none;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+.padding-to-contact-element {
+    padding: 0px 0px .95rem 0px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.fab,
+.far,
+.fas {
+    /* font-size: 2rem; */
+    color: white;
+}
+
+.far {
+    font-size: 2rem;
+}
+
+.contact-detail-font {
+    font-size: .95rem;
+    padding: 0px 10px;
+    color: rgb(160, 160, 160);
+    line-height: 1.5;
+}
+
+/* footer */
+.footer {
+    padding: 10px 0px 70px 0px;
+    color: gray;
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 12px;
+    }
+
+    .flex-direction {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .flex-between {
+        justify-content: space-evenly;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .gallery-flex-basis {
+        flex-basis: 100%;
+    }
+
+}
